@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+    top: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    position: relative;
+}
+
+.container-fluid{
+    padding-left: 50px;
+}
+
+.glyphicon{
+    color: #2E64FE;
+}
+
+#section1 {
+    padding-top:300px;
+    height:700px;
+    color: fff; 
+    /*background-image: url('../assets/img/fondo.png');
+    background-repeat: no-repeat;*/
+
+}
+#section2 {
+    padding-top:300px;
+    height:700px;
+    color: fff; 
+    background-color: #FAFAFA;
+}
+#section3 {
+    padding-top:80px;
+    height:700px;
+    color: fff; 
+    background-color: rgba(255, 255, 255, 0.767);
+}
+
+#pie{
+    height: 130px;
+    background-color: #3A454E;
+}
+
+#piePagina{
+    padding: 50px;
+    font-size: 20px;
+    color: white
+}
+
+#etiquetaTiempo{
+    width: 90%;
+    height: 500px;
+    box-shadow: 5px -5px 0 #ccc;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #E6E6E6;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: #2E64FE;
+    color: white;
+}
+
+#infor{
+    width: 80%;
+    border: 1px solid black;
+}
+
+.row{
+    display: flex;
+    float: center;
+}
+
+.col-2{
+    height: auto;
+    width: 40%;
+    float: center;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.col-8{
+    height: auto;
+    width: 80%;
+    border: 1px solid black;
+}
+
+#clima{
+    display: inline-table;
+}
+
+#tiempo{
+    display: inline-table;
+    text-align: center;
+    width: auto;
+}
