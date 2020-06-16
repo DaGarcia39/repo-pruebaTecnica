@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="assets/img/icon.png">
     <title>The WeatherNews | Dani</title>
 </head>
@@ -19,7 +20,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> The WeatherNews</a>
+					<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-flash" id="rayo" aria-hidden="true"></span> The WeatherNews</a>
 			</div>
 				<div>
 					<div class="collapse navbar-collapse" id="myNavbar">
@@ -37,27 +38,36 @@
             <br>
             <h3></h3>
         </div>
-        <hr>
         <div id="section2" class="container-fluid">
-            <h1>NOTICIAS</h1>
-            <p>PROGRAMA ADSI</p>
-            <p>Tecnólogo en Analisis y desarrollo de sistemas de informacion</p>
+            <div class="row">
+                <div class="col-4">
+                    <h1>NOTICIAS</h1>
+                    <br>
+                    <input type="input" value="" id="noticias" class="form-control" placeholder="Buscar noticias ej. business">
+                    <button class="btn btn-danger" id="news" onclick="obtenerNoticias()"> Buscar <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    <br>
+                    <br>
+
+                </div>
+                <div class="col-8" id="lugarNoticias">
+                    
+                </div>
+            </div> 
         </div>
-        <hr>
         <div id="section3" class="container-fluid">
             <div id="etiquetaTiempo" class="container-fluid">
-                <h1 class="text-center">EL TIEMPO</h1>
+                <h1 class="text-center">EL CLIMA</h1>
                 <br>
                 <div class="text-center">
                     <input type="input" value="" id="tiempo" class="form-control" placeholder="Buscar una ciudad">
-                    <button class="btn btn-success" id="clima">Buscar!</button>
+                    <button class="btn btn-primary" id="clima"> Buscar <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                 </div>
                 <br>
                 <br>
                 <div class="container" id="infor">
-                    <div class="row">
-                        <div class="col-2">
-                            <b><p id="contenido" class="text-left"></p></b>
+                        <div class="col-2 text-center">
+                            <b><p id="contenido" class="text-center"></p></b>
+                            <p id="temp"></p>
                             <br>
                             <table class="table table-condensed">
                                 <tr>
@@ -73,20 +83,20 @@
                                     <td id="longitud"></td>
                                 </tr>
                             </table>
-                        </div>
-                        <div class="col-8">
-
-                        </div>       
-                    </div>
+                        </div>     
                 </div>
                 <br>
-                <p>PROGRAMA MECDICE</p>
-                <p>Tecnólogo en mantenimiento de equipos de computo y cableadp estructurado</p>
             </div>
         </div>
 
         <div id="pie" class="container-fluid">
-            <p class="text-center" id="piePagina"><b>Footer</b></p>
+            <a href="https://www.facebook.com/profile.php?id=100032033239672" id="icono"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/g.daniel2020/?hl=es-la" id="icono"><i class="fa fa-instagram"></i></a>
+            <a href="dagarcia282@misena.edu.co" id="icono"><i class="fa fa-google-plus"></i></a>
+            <a href="https://www.linkedin.com/in/daniel-alejandro-garcia-pe%C3%B1a-441a181a7/" id="icono"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div id="final" class="container-fluid">
+            © 2020 <a href="" id="nombre">Daniel Garcia</a>
         </div>
 
     <script src="js/tiempo.js"></script>
